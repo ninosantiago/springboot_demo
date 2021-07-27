@@ -1,0 +1,11 @@
+server:
+    #you can change the server port here
+  port: 8080
+  error:
+    whitelabel:
+        #disable whitelabel errors
+        enabled: false
+#this is where you format the logging
+logging:
+  pattern:
+    console: "%d(yyy-MM-dd HH:mm:ss.SSS) [%thread] %-5level %logger.%M - %msg%n"
