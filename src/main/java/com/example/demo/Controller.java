@@ -21,8 +21,10 @@ public class Controller {
     @ResponseBody
     public Iterable<String> getListSample() throws Exception { //return type is Iterable/List of String
         List<String> strings = new ArrayList<>();
+
         strings.add("Hello");
         strings.add("World");
+        strings.add("Howdy");
         logger.info("successfully called /list"); //sample logging
         return strings;
     }
@@ -37,7 +39,7 @@ public class Controller {
                                        // this is a sample of an optional parameter, you can assign a default value in case it doesn't exist
                                        @RequestParam(value = "message", required = false, defaultValue = "none") String message,
                                        // this is a sample of a required paramter, your payload must have the key "howdy"
-                                       @RequestParam(value = "key", required = true, defaultValue = "") String key
+                                       @RequestParam(value = "key", required = true) String key
     ) throws Exception {
         HashMap<String,String> map = new HashMap<>();
         map.put("Your message",message);
