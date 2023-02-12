@@ -1,0 +1,2 @@
+FROM azul/zulu-openjdk:17-latest
+RUN apt-get update && apt-get install -y xz-utils git
