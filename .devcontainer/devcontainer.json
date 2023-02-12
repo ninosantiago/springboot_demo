@@ -9,13 +9,13 @@
         "dockerfile": "dockerfile"
     },
 
-	// "features": {
-	// 	"ghcr.io/devcontainers/features/java:1": {
-	// 		"version": "none",
-	// 		"installMaven": "false",
-	// 		"installGradle": "true"
-	// 	}
-	// }
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "false",
+			"installGradle": "true"
+		}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
