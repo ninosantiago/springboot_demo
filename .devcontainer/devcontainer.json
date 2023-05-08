@@ -15,6 +15,15 @@
 			"installMaven": "false",
 			"installGradle": "true"
 		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-gradle",
+				"vscjava.vscode-spring-boot-dashboard"
+			]
+		}
 	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
